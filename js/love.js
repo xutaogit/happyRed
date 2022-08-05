@@ -172,7 +172,7 @@ let blocks = document.getElementsByClassName("block"),
   timer = null,
   index = 0, //璁板綍鎷兼帴鐖卞績鐨勫姩鐢绘楠�
   clone_block; //鐢ㄤ簬鍏嬮殕鏂瑰潡
-console.log('======',blocks);
+console.log("======", blocks);
 //1.绉诲姩鏂瑰潡鐨勩€愯嚜韬腑蹇冦€戝埌銆愮埍蹇冧腑蹇冦€�
 block.style.top = "50%";
 block.style.left = "50%";
@@ -230,8 +230,15 @@ function Rise() {
     // console.log(distance);
     if (distance >= target) {
       clearInterval(timer2);
-
-      console.log("鍗囩┖瀹屾瘯");
+      let center = document.querySelector(".body_center");
+      let box = document.createElement("div");
+      box.innerHTML = "小红帽节日快乐";
+      box.setAttribute(
+        "style",
+        "font-size:40px; color:#FFC1C1; font-weight:bold;position:absolute; bottom:-100px;left:30%"
+      );
+      center.appendChild(box);
+      console.log("结束");
     }
 
     love.style.top = love_top - distance + "px";
