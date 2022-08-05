@@ -235,7 +235,7 @@ function Rise() {
       box.innerHTML = "小红帽节日快乐";
       box.setAttribute(
         "style",
-        "font-size:40px; color:#FFC1C1; font-weight:bold;position:absolute; bottom:-100px;left:30%"
+        "font-size:40px; color:#ea5e5e; font-weight:bold;position:absolute; bottom:-100px;left:25%"
       );
       center.appendChild(box);
       console.log("结束");
